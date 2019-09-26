@@ -26,6 +26,24 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
-		return "";
+		
+			if (score == 2) {
+				return "safety";			//checking for safety score
+			} else if (score == 3){
+				return "field goal";		//checking for field goal score
+			} else if (score == 6) {
+				return "touchdown";			//checking for touchdown score
+			}else if (score == 7) {
+				return "touchdown and extra point";	//checking for touchdown and extra point
+			}else if (score == 8) {
+				return "touchdown and 2-point conversion"; //checking for touchdown and 2-point conversion
+			} else if (score == -1) {
+				return ""; 		//checking for negatives
+			}else if (score == 1) {
+				return "invalid";		//checking for invalid numbers 
+			} else if (score == 10) {
+				return "you must be playing Quidditch ";	//checking for accurate sport scores
+			}
+			return "" ;
 	}
 }
